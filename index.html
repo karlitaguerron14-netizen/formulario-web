@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Estudiantes</title>
+</head>   
+<body>
+     <div class="contenedor-formulario">
+        
+        <h1>Formulario de Registro de Estudiante</h1>
+        <h2>Instituto Superior Tecnologico Quito</h2>
+
+        <form action="../index.html" method="post">
+            
+            <fieldset>
+                <legend>1. Datos Personales</legend>
+                
+                <div>
+                    <label for="nombres">Nombres: </label>
+                    <input type="text" id="nombres" >
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos">
+                </div>
+                <div>
+                    <label for="fecha_nacimiento">Fecha de Nacimiento: </label>
+                    <input type="date" id="fecha_nacimiento">
+                </div>
+                <div>
+                    <label for="cedula">Cedula / Identificacion: </label>
+                    <input type="text" id="cedula">
+                </div>
+                <div>
+                    <label>Genero: </label>
+                    <div class="opciones-radio">
+                        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                        <label><input type="radio" name="genero" value="otro"> Otro</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="estado_civil">Estado Civil:</label>
+                    <select id="estado_civil">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="soltero">Soltero/a</option>
+                        <option value="casado">Casado/a</option>
+                        <option value="divorciado">Divorciado/a</option>
+                        <option value="viudo">Viudo/a</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="correo electronico">correo electronico</label>
+                    <input type="email" id="correo electronico">  
+                </div>
+                <div>
+                    <label for="Telefono">Telefono</label>
+                    <input type="number" id="Telefono">
+                </div>
+                <div>
+                     <label for ="direccion">direccion</label>
+                     <input type="text" id="direccion">
+                </div         
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Informacion Academica</legend>
+                
+                <div>
+                    <label for="carrera">Carrera: </label>
+                    <select id="carrera">
+                        <option value="">Seleccione una carrera</option>
+                        <option value="sistemas">Desarrollo de Software</option>
+                        <option value="redes">ciberceguridad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="nivel">Nivel: </label>
+                    <select id="nivel">
+                        <option value="">seleccione un nivel<option>
+                        <option value="1">Primer nivel</option>
+                        <option value="2">Segundo Nivel</option>
+                        <option value="3">Tercer nivel</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Modalidad de Estudio:</label>
+                    <div class="opciones-radio">
+                        <label><input type="radio" name="modalidad" value="presencial"> Presencial</label>
+                        <label><input type="radio" name="modalidad" value="En linea">En linea</label>
+                        <label><input type="radio" name="modalidad" value="Hibrida">Hibrida</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="periodo">Periodo Academico: </label>
+                    <select id="periodo">
+                        <option value="">Seleccione un periodo</option>
+                        <option value="2024-1">2024 - 1</option>
+                        <option value="2024-2">2024 - 2</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Turno:</label>
+                    <div class="opciones-radio">
+                        <label><input type="radio" name="turno" value="manana"> Manana</label>
+                        <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                        <label><input type="radio" name="turno" value="noche"> Noche</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="como_se_entero">Como se entero de la institucion?</label>
+                    <select id="como_se_entero">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="redes">Redes Sociales</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="web">Familiares</option>
+                    </select>
+                </div>
+            </fieldset>
+ 
+            <fieldset>
+                <legend>3. Habilidades y Conocimientos</legend>
+                
+                <div>
+                    <label>Marque sus areas de interes: </label>
+                    <div class="opciones-check">
+                        <label><input type="checkbox" name="interes" value="web"> Desarrollo Web</label><br>
+                        <label><input type="checkbox" name="interes" value="ia"> Inteligencia Artificial</label><br>
+                        <label><input type="checkbox" name="interes" value="redes"> Redes y Seguridad</label><br>
+                        <label><input type="checkbox" name="interes" value="bd"> Bases de Datos</label><br>
+                        <label><input type="checkbox" name="interes" value="movil"> Desarrollo Movil</label><br>
+                        <label><input type="checkbox" name="interes" value="datos"> Ciencia de Datos</label><br>
+                        <label><input type="checkbox" name="interes" value="robotica"> Robotica</label><br>
+                        <label><input type="checkbox" name="interes" value="otras"> Otras</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Nivel de Conocimientos en Programacion:</label>
+                    <div class="opciones-radio">
+                        <label><input type="radio" name="nivel_prog" value="basico"> Basico</label><br>
+                        <label><input type="radio" name="nivel_prog" value="intermedio"> Intermedio</label><br>
+                        <label><input type="radio" name="nivel_prog" value="avanzado"> Avanzado</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. Informacion Adicional</legend>
+                
+                <div>
+                    <label for="fotografia">Cargue su fotografia: </label>
+                    <input type="file" id="fotografia" accept="image/jpeg, image/png">
+                    <br><small>Formatos permitidos: JPG, PNG (Max. 2MB)</small>
+                </div>
+                <div>
+                    <label for="documentos">Adjuntar documentos (opcional):</label>
+                    <input type="file" id="documentos" accept=".pdf">
+                    <br><small>PDF (Max. 5MB)</small>
+                </div>
+                <div>
+                    <label for="observaciones">Observaciones:</label>
+                    <textarea id="observaciones" rows="2"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="botones">
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+            </div>
+
+        </form>
+        
+        <br>
+        <a href="../index.html">Ir a home</a>
+    </div>
+
+</body>
+</html>
